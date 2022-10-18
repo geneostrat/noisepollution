@@ -1,0 +1,158 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08CC3D34-8713-45C8-BF60-992B398CC098}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI_AA45_002A</RootNamespace>
+    <AssemblyName>UI-AA45-002A</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ac-dc-tour.jpg" />
+    <Content Include="acdctext.jpg" />
+    <Content Include="backinblack.jpg" />
+    <Content Include="ballbreaker.jpg" />
+    <Content Include="blackice.jpg" />
+    <Content Include="blowupyourvideo.jpg" />
+    <Content Include="contactus.jpg" />
+    <Content Include="contactusH.jpg" />
+    <Content Include="Default.aspx" />
+    <Content Include="dirtydeedsdonecheap.jpg" />
+    <Content Include="DSC02649.JPG" />
+    <Content Include="DSC02654.JPG" />
+    <Content Include="flickoftheswitch.jpg" />
+    <Content Include="fly.gif" />
+    <Content Include="flyonthewall.jpg" />
+    <Content Include="forthoseabouttorock.jpg" />
+    <Content Include="gene.jpg" />
+    <Content Include="geneH.jpg" />
+    <Content Include="genepic.jpg" />
+    <Content Include="highvoltage.jpg" />
+    <Content Include="highwaytohell.jpg" />
+    <Content Include="home.jpg" />
+    <Content Include="homeH.jpg" />
+    <Content Include="ifyouwantblood.jpg" />
+    <Content Include="index.html" />
+    <Content Include="letthereberock.jpg" />
+    <Content Include="lightning.gif" />
+    <Content Include="malcolm.jpg" />
+    <Content Include="memory.css" />
+    <Content Include="memory.js" />
+    <Content Include="music.jpg" />
+    <Content Include="musicH.jpg" />
+    <Content Include="photos.jpg" />
+    <Content Include="photosH.jpg" />
+    <Content Include="powerage.jpg" />
+    <Content Include="prototype.s2.min.js" />
+    <Content Include="razorsedge.jpg" />
+    <Content Include="rick.jpg" />
+    <Content Include="rickH.jpg" />
+    <Content Include="rob.jpg" />
+    <Content Include="rob1.jpg" />
+    <Content Include="rob2.jpg" />
+    <Content Include="robH.jpg" />
+    <Content Include="stan.jpg" />
+    <Content Include="stanH.jpg" />
+    <Content Include="steve.jpg" />
+    <Content Include="steveH.jpg" />
+    <Content Include="stiffupperlip.jpg" />
+    <Content Include="theband.jpg" />
+    <Content Include="thebandH.jpg" />
+    <Content Include="thunder.jpg" />
+    <Content Include="Thunderstruck Graphic Black Only.jpg" />
+    <Content Include="thundertext.jpg" />
+    <Content Include="tour.jpg" />
+    <Content Include="tourH.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="whomadewho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58126</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
