@@ -45,7 +45,7 @@ logo img {
   position : absolute;
   top: 220px;
   left: -900px;
-  width: 700px;
+  width: 780px;
   height: 700px;
   background: Black;
   color: White;
@@ -60,7 +60,7 @@ logo img {
   position : absolute;
   top: 220px;
   left: -900px;
-  width: 700px;
+  width: 780px;
   height: 700px;
   background: Black;
   color: White;
@@ -72,7 +72,7 @@ logo img {
 {
  position: absolute;
   overflow:auto;
-  width: 700px;
+  width: 780px;
   height: 600px;
 }
 
@@ -141,4 +141,19 @@ a {
 {
 	vertical-align:top;
 } 
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #324848;
+}
+
 
