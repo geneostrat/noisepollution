@@ -3,7 +3,7 @@
 
     // waits for the document to be fully loaded (without images)
     document.observe('dom:loaded', function() {
-        var cards = $$('div.card'), SIZE = 230, logos = $$('div.logo'), homepages = $$('div.page'), navs = $$('div.nav'), members = $$('img.band_member'),
+        var cards = $$('div.card'), SIZE = 230, logos = $$('div.logo'), homepages = $$('div.page'), navs = $$('div.nav'), members = $$('img.band_member'), msg = $$('div.msg'),
       currentId = null, blocked = false, score = 0, tries = 0, currentPage = 0, currentNavId = 'homepage'; //, lightnings = $$('img.lightning')
 
         //        $(homepages[0]).hide();
@@ -118,7 +118,9 @@
             $(navs[0]).morph('left:0px', { transition: 'bounce', duration: 1, delay: 4.3 });
             $(homepages[0]).morph('left:220px', { transition: 'bounce', duration: 1, delay: 4 });
 
-
+			var amg = msg[0];
+			$(amg).morph('left:220px', { transition: 'bounce', duration: 3, delay: 5 });
+			
             //$(c1).morph('left:300px', { transition: 'bounce', duration: 2 });
 
             /*      
@@ -141,7 +143,7 @@
 
         function dispatchNav(event, element) {
             var k = element;
-
+                        $('msgbox').hide();
                         $('bolt').show();
                         $('bolt').morph('width: 170px; left:385px', { transition: 'easeTo', duration: .3 });
                         $('bolt').morph('width: 85px; left:470px', { transition: 'easeFrom', duration: .3, delay: .3, after: function() { $('bolt').hide(); } });
@@ -323,10 +325,11 @@
         });
 
         $('bolt').hide();
-
+		
         shuffle();
 
         Object.extend(object, { shuffle: shuffle, win: win });
+		
     });
 
 })(window);

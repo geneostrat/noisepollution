@@ -41,6 +41,22 @@ logo img {
   height: 140px;
 } 
 
+.msg {
+  position : absolute;
+  top: 800px;
+  left: -1000px;
+  width: 450px;
+  height: 50px;
+  background: SeaGreen;
+  color: White;
+  /*overflow:auto;*/
+  font: 20px Helvetica, Arial;
+  z-index: 350;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
 .page {
   position : absolute;
   top: 222px;
