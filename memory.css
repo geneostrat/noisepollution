@@ -30,7 +30,7 @@ body {
   left: 10px;
   width: 340px;
   height: 140px;
-  z-index: -1;
+  z-index: 1;
 }
 
 logo img {
@@ -39,11 +39,11 @@ logo img {
   left: 70px;
   width: 340px;
   height: 140px;
-}
+} 
 
 .page {
   position : absolute;
-  top: 220px;
+  top: 222px;
   left: -900px;
   width: 780px;
   height: 700px;
