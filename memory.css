@@ -56,6 +56,10 @@ logo img {
   padding-right: 10px;
 }
 
+.msglink {
+	padding-bottom: 5px;
+	cursor:pointer;
+}
 
 .page {
   position : absolute;

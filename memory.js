@@ -324,6 +324,12 @@
             }
         });
 
+		$('msgbox').on('click', 'div.msg', function(event, element) {
+            var k = element;
+			var a = $('div.tour_page');
+            dispatchNav(event, $('tour'));
+        });
+		
         $('bolt').hide();
 		
         shuffle();
