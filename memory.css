@@ -88,6 +88,18 @@ logo img {
   z-index: 50;
 }
 
+.pageTour {
+  position : absolute;
+  top: 220px;
+  left: -900px;
+  width: 780px;
+  height: 900px;
+  background: Black;
+  color: White;
+  font: 20px Helvetica, Arial;
+  z-index: 50;
+}
+
 .scrollBand 
 {
  position: absolute;
