@@ -63,8 +63,8 @@
         ozH = new Image(); ozH.src = 'ozH.jpg';
         ozR = new Image(); ozR.src = 'oz.jpg';
 
-        joeH = new Image(); joeH.src = 'joeH.jpg';
-        joeR = new Image(); joeR.src = 'joe.jpg';
+        richH = new Image(); richH.src = 'richH.jpg';
+        richR = new Image(); richR.src = 'rich.jpg';
 
         //lightning = new Image(); lightning.src = 'lightning.gif';
 
@@ -323,7 +323,7 @@
                 case 'mike': element.src = mikeH.src; break;
                 case 'oz': element.src = ozH.src; break;
                 case 'tony': element.src = tonyH.src; break;
-                case 'joe': element.src = joeH.src; break;
+                case 'rich': element.src = richH.src; break;
             }
         });
         $('membernav').on('mouseout', 'img.band_member', function(event, element) {
@@ -332,7 +332,7 @@
                 case 'mike': element.src = mikeR.src; break;
                 case 'oz': element.src = ozR.src; break;
                 case 'tony': element.src = tonyR.src; break;
-                case 'joe': element.src = joeR.src; break;
+                case 'rich': element.src = richR.src; break;
             }
         });
 
