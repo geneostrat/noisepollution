@@ -1,475 +1,588 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <title>Power Up</title>
-    <link href="memory.css" media="screen" rel="Stylesheet" type="text/css" />
-  </head>
-  <body style="background-color: Black">    
-    <div id="field">
-      <div class="card"><img src="backinblack.jpg"/></div>
-      <div class="card"><img src="blackice.jpg"/></div>
-      <div class="card"><img src="ballbreaker.jpg"/></div>
-      <div class="card"><img src="blowupyourvideo.jpg"/></div>
-      
-      <div class="card"><img src="dirtydeedsdonecheap.jpg"/></div>
-      <div class="card"><img src="flickoftheswitch.jpg"/></div>
-      <div class="card"><img src="flyonthewall.jpg"/></div>
-      <div class="card"><img src="forthoseabouttorock.jpg"/></div>
-      
-      <div class="card"><img src="highvoltage.jpg"/></div>
-      <div class="card"><img src="highwaytohell.jpg"/></div>
-      <div class="card"><img src="ifyouwantblood.jpg"/></div>
-      <div class="card"><img src="letthereberock.jpg"/></div>
-      
-      <div class="card"><img src="powerage.jpg"/></div>
-      <div class="card"><img src="razorsedge.jpg"/></div>
-      <div class="card"><img src="stiffupperlip.jpg"/></div>
-      <div class="card"><img src="whomadewho.jpg"/></div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Power Up - A Tribute to the Music of AC/DC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+<!--==============GOOGLE FONT - PT SANS=================-->
+<link href="http://fonts.googleapis.com/css?family=PT%20Sans:400,700" rel="stylesheet" type="text/css">
 
-      <div class="logo"><img src="powerupbanner.jpg"/></div>
-      <img src="lightning.gif" id="bolt" style="position:absolute; left:470px; top:-7px; z-index:1000; "/><!--<span style="color:white">Thunder</span>-->
+<!--==============MAIN CSS=================-->
 
-      <div class="nav" id="nav">
-          <div class="navlink" id="homepage"><img src="home.jpg"/></div>
-          <div class="navlink" id="theband"><img src="theband.jpg"/></div>
-          <div class="navlink" id="tour"><img src="tour.jpg"/></div>
-          <div class="navlink" id="music"><img src="music.jpg"/></div>
-          <div class="navlink" id="photos"><img src="photos.jpg"/></div>
-          <div class="navlink" id="contactus"><img src="contactus.jpg"/></div>
-          <div style="text-align: center"><img src="fly.gif"/></div>
-		  <br/>
-		  <div style="text-align: center"> <a href="https://www.facebook.com/poweruprock" target="_blank"> <img src="fb7.PNG" style="width: 60%; height: 60%;"/> </a></div>
-      </div>
-      <div id="score">0</div>
-      <div id="tries">0</div>
-    
-    </div>
-   
-    <div class="msg" id="msgbox">
-	  See us at Husky's Pub in Worcester on May 11th. <br/>
-	  <u>Click here for tour schedule.<u/>
-	</div>
-   
-    <div class="page" id="homepage_page">
-            <div style="text-align: center">A tribute to the music of <img src="acdctext.jpg" class="textmiddle"/>.</div><p></p>
-            We are <img src="poweruptext.jpg" class="textmiddle"/>. New England's premier tribute to the music of <img src="acdctext.jpg" class="textmiddle"/>. 
-            Consisting of five talented musicians with a passion for presenting the music of <img src="acdctext.jpg" class="textmiddle"/> that stands up to the original recordings.
-            <img src="poweruptext.jpg" class="textmiddle"/> plays songs across the entire catalog of <img src="acdctext.jpg" class="textmiddle"/> albums- from High Voltage to Power Up.
-            <p /> 
-            For those about to rock- we salute you.
-            <br />
-            <!--<img  src="np.jpg" style="display: block; margin-left: auto; margin-right: auto; width:70%; height: 70%" /> -->
+<link href="css/band.css" rel="stylesheet" media="all">
 
-			<div style="max-width:700px">
-			  <img class="mySlides" src="np.jpg" style="width:100%">
-			  <img class="mySlides" src="2023.06.06_TRB-18.jpg" style="width:100%; ">
-			  <img class="mySlides" src="2023.06.06_TRB-21.jpg" style="width:100%; ">
-			  <img class="mySlides" src="2023.06.06_TRB-22.jpg" style="width:100%; ">
-			  <img class="mySlides" src="2023.06.06_TRB-24.jpg" style="width:100%; ">
-			  <img class="mySlides" src="2023.06.06_TRB-28.jpg" style="width:100%; ">
-			  <img class="mySlides" src="2023.06.06_TRB-29.jpg" style="width:100%; ">
-			  <img class="mySlides" src="2023.06.06_TRB-30.jpg" style="width:100%; ">
+<!--Tweet CSS-->
+<link href="css/jquery.tweet.css" rel="stylesheet" media="all">
 
-			  <img class="mySlides" src="IMG_1667.jpg" style="width:50%; ">			  
-			  <img class="mySlides" src="IMG_1669.jpg" style="width:50%; ">			  
-			  <img class="mySlides" src="IMG_1670.jpg" style="width:50%; ">			  
-			  <img class="mySlides" src="IMG_1671.PNG" style="width:50%; ">		
+<!--===================FLEX SLIDER=======================-->
 
-			  <img class="mySlides" src="./4s/0.jpg"  style="width:70%; ">						  
-			  <img class="mySlides" src="./4s/1.jpg"   style="width:70%; ">						  
-			  <img class="mySlides" src="./4s/2.jpg"   style="width:70%; ">						  
-			  <img class="mySlides" src="./4s/3.jpg"   style="width:70%; ">						  
-			  <img class="mySlides" src="./4s/4.jpg"  style="width:70%; ">						  
-			  <img class="mySlides" src="./4s/5.jpg"  style="width:70%; ">					  
-	          <img class="mySlides" src="./4s/6.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/7.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/8.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/9.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/10.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/11.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/12.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/13.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/14.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/15.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/16.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/17.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/18.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/19.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/20.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/21.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/22.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/23.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/24.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/25.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/26.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/27.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/28.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/29.jpg"  style="width:70%; ">		
-	          <img class="mySlides" src="./4s/30.jpg"  style="width:70%; ">		
-			  
-			  </div>			
-			<p/>
-            <div style="text-align: center"> (This is <img src="poweruptext.jpg" class="textmiddle"/>- ready to play a pub or club near you) </div>
-    </div>
-    <div class="page" id="theband_page">
-        <div id="membernav">
-            <img id="gene" src="gene.jpg" class="band_member"/>
-            <img id="mike" src="mike.jpg" class="band_member"/>
-            <img id="tony" src="tony.jpg" class="band_member"/>
-            <img id="oz" src="oz.jpg" class="band_member"/>
-            <img id="rich" src="rich.jpg" class="band_member"/> 
+<link rel="stylesheet" href="css/flexslider.css" />
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+  $(window).load(function() {
+     $('.flexslider').flexslider({
+        animation: "slide"
+      });
+  });
+</script>
+
+<!--=============================FANCY BOX STARTS================================-->
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.4" media="screen" />
+<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox({
+    helpers : {
+        overlay : {
+            locked : false,
+        }
+    }
+});
+});
+</script>
+
+<!--============================FANCY BOX ENDS========================================-->
+
+<!--============================ PARALLAX SCRIPT ========================================-->
+
+<script src="js/stellar.js"></script>
+<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+		</script>
+
+<!--==============CONTACT FORM=================-->
+<script src="js/contact_form.js"></script>
+</head>
+
+<body>
+<a id="home"></a> 
+<!--==============HEADER =================-->
+<div class="jumbotron masthead" data-stellar-background-ratio="0.5"> 
+  
+  <!--==============Logo & Menu Bar=================-->
+  
+  <div class="navbar navbar-fixed-top navbar-absolute">
+    <div class="navbar-inner">
+      <div class="container"> 
+        
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content --> 
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+        
+        <!-- Be sure to leave the brand out there if you want it shown --> 
+        <a class="brand" href="#"> <img src="images/powerup-logo-small-trans40.png" alt="logo"></a>  <!--logo-small.png -->
+        
+        <!-- Everything you want hidden at 940px or less, place within here -->
+        <div class="nav-collapse collapse"> 
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          
+          <ul class="nav pull-right">
+            <li class="active"><a href="#home">HOME</a></li>
+            <li><a href="#events">EVENTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#media">MEDIA</a></li>
+            <!--<li><a href="#audio">AUDIO</a></li>
+            <li><a href="#newsletter">SUBSCRIBE</a></li> -->
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="bandbios.html" target="_blank">BAND BIOS</a></li>
+                <li><a href="songlist.html" target="_blank">SONG LIST</a></li>
+                <!--<li><a href="404.html" target="_blank">404 PAGE</a></li>
+                <li><a href="soon.html" target="_blank">COMING SOON</a></li>-->
+              </ul>
+            </li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
         </div>
-        <p/>
-            Bios for the <img src="poweruptext.jpg" class="textmiddle"/> musicians can be shown by clicking the links above. <p/>
-            <div id="scrollband" class="scrollBand">
-                <div id="gene_bio">
-                    <img src="gene.jpg"/> 
-                    <!--<img src="genepic.jpg" class="bio_pic" />-->
-                    <br />
-					<img src="genevocal1.jpg" style="float:left; width:40%; height:40%; margin:10px;">					
-                    Gene is the vocalist for Power Up. Classically trained on piano, he switched to guitar around the time "For Those About to Rock" was released. Driving around with friends in high school, everyone sang along to songs from Boston to Def Leppard, but there was only one person in the car that could deliver the 'Brian Johnson' when AC/DC came on the radio. A few years back, he decided it was time to start an AC/DC band- "Guns for Hire" was born. Putting a band together is not an easy process- but he learned a lot about finding and auditioning musicians, booking venues and putting set lists together. Some recordings caught the ear of a popular New England tribute band, "Fat Angus", where he got the chance to sing for them. Assembling Power Up was almost too easy- loads of talent and quite honestly the best group of musicians to spend time with- on and off the stage. Now the only thing left to say is... Are you ready?
-                    <p />
-                </div>
-                <div id="mike_bio">
-                    <img src="mike.jpg"/> 
-                    <br />
-					<img src="mikebio1.jpg"  style="float:left; width:30%; height:30%;margin:10px;">							
-                    Mike is the drummer for Power Up. He is a student of the Phil Rudd drum technique. He has toured extensively with another band- but felt the need to scratch that AC/DC itch. He has seen AC/DC perform live more than another other member of Power Up and knows their song catalog inside and out. Mike also supports Power Up with sound and lighting. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <p/>
-                </div>    
-                <div id="tony_bio">
-                    <img src="tony.jpg"/> 
-					<img src="tonybio.jpg"  style="float:left; width:30%; height:30%;margin:10px;">					
-                    Tony has been writing and performing music for over 30 years.  Primarily self taught on guitar, he has studied musical theory and learned to sing and/or play other instruments over the years as needed to get on stage.  As a lead guitar player in cover and original alternative metal bands in college, he learned to use, and sometimes build, a variety of musical equipment.  Now the lead guitarist and backup singer for Power Up, he really enjoys performing AC/DC’s blues inspired, iconic hard rock hits in front of energetic audiences.  And while he’s never been able to fit in Angus’ school boy uniform, studying the lead guitarist’s trademark playing style and representing his legendary onstage presence is both a unique challenge and an amazing experience.
-                    <p />
-                </div>
-                <div id="oz_bio">
-                    <img src="oz.jpg"/> 
-                    <br />
-					<img src="ozbio.jpeg"  style="float:left; width:40%; height:40%;margin:10px;">					
-                    The Power Up band is still trying to figure out this person named Oz.  One day, he simply showed up at their practice unannounced, plugged in his Gretsch guitar, and began playing Malcolm Young riffs.  It is not known how Oz found the band, but at the time, the band was in search of a rhythm guitarist.  The band has tried to research his background, but little could be found.  Past acquaintances suggest he spoke little and was frequently seen listening to his Walkman.  Supposedly, this began at a young age after receiving two tapes – Back in Black and Powerage – that were gifted to him from his Aunt Rosie’s estate.  Records show disciplinary issues while attending Catholic school, with repeated instances of Oz being caught sneaking into the church after hours to recite the sermon from Let There Be Rock.  Shortly after high school, he was reportedly dismissed from his job at the Dixie Boy Truck Stop because he insisted on continuously playing ACDC Live at high volumes over the sound system.   Soon after, he was rarely seen without a Gretsch in his hands.  There are other stories, such as Oz supposedly playing the Jailbreak riff for six hours straight, but as of this writing, this remains unconfirmed.  While much still remains unknown, what is known is that Oz is passionate about AC/DC music and has dedicated himself towards playing rhythm guitar in honor of Malcom Young.
-                    <p />
-                </div>
-                <div id="rich_bio"  >
-                    <img src="rich.jpg"/> 
-                    <br />
-                    <img src="richh2.jpg" style="float:left; width:30%; height:30%;margin:10px;"/> 
-                    <br />
-                    Rich has been playing in blues, jazz, and rock bands since 1991 and joined Power Up in 2024. A long-time admirer of Mark Evans and Cliff Williams, Rich stays true to their respective bass sounds and playing styles, delivering the relentless groove that is the hallmark of AC/DC. 
-                    <p />
-                </div>
-            </div>
+      </div>
     </div>
-    <div class="pageTour" id="tour_page">            
-            <p/>
-			<p><li>May 11th 2024- <img src="poweruptext.jpg" class="textmiddle"/>is excited to play at Husky's Pub in Worcester!</li>
-             <ul>
-             <li><a href="https://www.facebook.com/Huskyspub/"> Husky's Pub Facebook</a> </li>
-			 </ul>
-			<p/>
-			<p/>
-			<li>June 8th 2024- <img src="poweruptext.jpg" class="textmiddle"/>back at Polar Park playing the gates!</li>
-             <ul>
-			 <li><a href="https://www.polarpark.com/"> Polar Park's website</a> </li>
-             <li><a href="https://www.facebook.com/PolarParkWorcester/"> Polar Park's Facebook</a> </li>
-			 </ul>
-			<p/>
-			<p/>
-			<li>June 29th 2024 - <img src="poweruptext.jpg" class="textmiddle"/>is excited to be back at The 4s Sports Pub in Framingham!</li>
-			<li>We will be playing the entire Back in Black album in order- plus all your other favorites. Join us for this exciting show!</li>
-             <ul>
-			 <li><a href="http://www.the4ssportspubframingham.com/"> The 4's Sports Pub website</a> </li>
-             <li><a href="https://www.facebook.com/the4ssportspub//"> The 4's Sports Pub Facebook</a> </li>
-			 </ul>
-			<p/>	
-			<li>Saturday, August 17th 2024- <img src="poweruptext.jpg" class="textmiddle"/>is booked for a private event.</li>
-			<p/>			
-			<li>Wednesday, August 14th 2024- <img src="poweruptext.jpg" class="textmiddle"/>back at Polar Park playing the gates!</li>
-             <ul>
-			 <li><a href="https://www.polarpark.com/"> Polar Park's website</a> </li>
-             <li><a href="https://www.facebook.com/PolarParkWorcester/"> Polar Park's Facebook</a> </li>
-			 </ul>
-			<p/>
-			<li>Wednesday, August 28th 2024- <img src="poweruptext.jpg" class="textmiddle"/>back at Polar Park playing the gates!</li>
-             <ul>
-			 <li><a href="https://www.polarpark.com/"> Polar Park's website</a> </li>
-             <li><a href="https://www.facebook.com/PolarParkWorcester/"> Polar Park's Facebook</a> </li>
-			 </ul>
-			<p/>
-			<li>Wednesday, September 11th 2024- <img src="poweruptext.jpg" class="textmiddle"/>back at Polar Park playing the gates!</li>
-             <ul>
-			 <li><a href="https://www.polarpark.com/"> Polar Park's website</a> </li>
-             <li><a href="https://www.facebook.com/PolarParkWorcester/"> Polar Park's Facebook</a> </li>
-			 </ul>
-			<p/>
-			
-			<hr/>
-			<p><li>December 9th - <img src="poweruptext.jpg" class="textmiddle"/>is excited to return to Limey's Pub in Norwood!</li>
-             <ul>
-			 <li><a href="http://www.limeyspub.com/"> Limey's Pub website</a> </li>
-             <li><a href="https://www.facebook.com/limeyspubnorwood/"> Limey's Pub Facebook</a> </li>
-			 </ul>
-			<p/>
-			<li>December 2nd - <img src="poweruptext.jpg" class="textmiddle"/>is excited to play at The 4s Sports Pub in Framingham!</li>
-             <ul>
-			 <li><a href="http://www.the4ssportspubframingham.com/"> The 4's Sports Pub website</a> </li>
-             <li><a href="https://www.facebook.com/the4ssportspub//"> The 4's Sports Pub Facebook</a> </li>
-			 </ul>
-			<p/>
-			<li>September 23rd - <img src="poweruptext.jpg" class="textmiddle"/>is excited to be part of PorchFest in Roslindale.</li>
-             <ul>
-			 <li><a href="https://roslindaleporchfest.org/"> PorchFest website</a> </li>
-             <li><a href="https://www.facebook.com/roslindaleporchfest"> PorchFest Facebook</a> </li>
-             <li><a href="https://www.instagram.com/roslindaleporchfest/"> PorchFest Instagram</a> </li>
-			 </ul>
-			<p/>
-			<li>September 16th - <img src="poweruptext.jpg" class="textmiddle"/>back at Polar Park playing the gates before this Saturday game.</li>
-             <ul>
-			 <li><a href="https://www.polarpark.com/"> Polar Park's website</a> </li>
-             <li><a href="https://www.facebook.com/PolarParkWorcester/"> Polar Park's Facebook</a> </li>
-			 </ul>
-			<p/>
-			<p/><li>July 22nd - <img src="poweruptext.jpg" class="textmiddle"/>is excited to be at Pete's Bar and Grille in Quincy.</li>
-			 <ul>
-			 <li><a href="https://www.facebook.com/people/Petes-Bar-and-Grille/100063557441611/"> Pete's Bar and Grille Facebook</a> </li>
-			 </ul>
-			<p/>
-			<li>June 24th - <img src="poweruptext.jpg" class="textmiddle"/>is appearing at 25 Gladstone St, PorchFest in Quincy.</li>
-			 <ul>
-			 <li><a href="https://www.porchfestquincy.org/"> PorchFest Quincy website</a> </li>
-			 <li><a href="https://www.facebook.com/PorchFestQuincy/"> PorchFest Quincy Facebook</a> </li>
-			 </ul>
-			<p/>
-			<p><li>June 6th - <img src="poweruptext.jpg" class="textmiddle"/>is excited to be playing the gates at Polar Park before this Tuesday game.</li>
-             <ul>
-			 <li><a href="https://www.polarpark.com/"> Polar Park's website</a> </li>
-             <li><a href="https://www.facebook.com/PolarParkWorcester/"> Polar Park's Facebook</a> </li>
-			 </ul>
-			<p/>
-			<p>
-			<li>April 29th - <img src="poweruptext.jpg" class="textmiddle"/>is excited to return to Limey's Pub in Norwood. Special guest 'Time of Legends' will once again open!</li>
-             <ul>
-			 <li><a href="http://www.limeyspub.com/"> Limey's Pub website</a> </li>
-             <li><a href="https://www.facebook.com/limeyspubnorwood/"> Limey's Pub Facebook</a> </li>
-			 </ul>
-			<p/>			
-            <li>Madison Square Garden (Date to be announced) </li>
-			</ul>
-    </div>
-    <div class="page" id="music_page" style="overflow: scroll">
+  </div>
+  <div class="container"> 
     
-	<div>
-	<table>
-		<tr>
-		<th>Song</th>
-		<th>Album</th>
-		</tr>
-		<tr>
-		<td>Hells Bells</td>
-		<td>Back In Black</td>
-		</tr>
-		<tr>
-		<td>T.N.T</td>
-		<td>High Voltage</td>
-		</tr>
-		<tr>
-		<td>Have a Drink On Me</td>
-		<td>Back In Black</td>
-		</tr>
-		<tr>
-		<td>Rock and Roll Train</td>
-		<td>Black Ice</td>
-		</tr>
-		<tr>
-		<td>Money Talks</td>
-		<td>The Razors Edge</td>
-		</tr>
-		<tr>
-		<td>Rock &amp Roll Ain’t Power Up</td>
-		<td>Back In Black</td>
-		</tr>
-		<tr>
-		<td>Satellite Blues</td>
-		<td>Stiff Upper Lip</td>
-		</tr>
-		<tr>
-		<td>Shake a Leg</td>
-		<td>Back In Black</td>
-		</tr>
-		<tr>
-		<td>Shoot To Thrill</td>
-		<td>Back In Black</td>
-		</tr>
-		<tr>
-		<td>Whole Lotta Rosie</td>
-		<td>Let There Be Rock</td>
-		</tr>
-		<tr>
-		<td>Thunderstruck</td>
-		<td>The Razors Edge</td>
-		</tr>
-		<tr>
-		<td>Dirty Deeds Done Dirt Cheap</td>
-		<td>Dirty Deeds Done Dirt Cheap</td>
-		</tr>
-		<tr>
-		<td>Big Gun</td>
-		<td>Last Action Hero Soundtrack</td>
-		</tr>
-		<tr>
-		<td>What Do You Do For Money Honey</td>
-		<td>Back In Black</td>
-		</tr>
-		<tr>
-		<td>That’s the Way I Wanna Rock and Roll</td>
-		<td>Blow Up Your Video</td>
-		</tr>
-		<tr>
-		<td>Back In Black</td>
-		<td>Back In Black</td>
-		</tr>
-		<tr>
-		<td>Rock or Bust</td>
-		<td>Rock or Bust</td>
-		</tr>
-		<tr>
-		<td>Play Ball</td>
-		<td>Rock or Bust</td>
-		</tr>
-		<tr>
-		<td>Who Made Who</td>
-		<td>Who Made Who</td>
-		</tr>
-		<tr>
-		<td>Hell Ain’t a Bad Place to Be</td>
-		<td>Let There Be Rock</td>
-		</tr>
-		<tr>
-		<td>You Shook Me All Night Long</td>
-		<td>Back In Black</td>
-		</tr>
-		<tr>
-		<td>Highway To Hell</td>
-		<td>Highway To Hell</td>
-		</tr>
-		<tr>
-		<td>For Those About To Rock</td>
-		<td>For Those About To Rock</td>
-		</tr>
-		<tr>
-		<td>Let's Get It Up</td>
-		<td>For Those About To Rock</td>
-		</tr>
-		<tr>
-		<td>Put The Finger On You</td>
-		<td>For Those About To Rock</td>
-		</tr>		
-		<tr>
-		<td>Riff Raff</td>
-		<td>Powerage</td>
-		</tr>		
-		<tr>
-		<td>Are You Ready</td>
-		<td>The Razors Edge</td>
-		</tr>		
-		<tr>
-		<td>Girls Got Rhythm</td>
-		<td>Highway to Hell</td>
-		</tr>		
-		<tr>
-		<td>If You Want Blood, You Got It</td>
-		<td>Highway to Hell</td>
-		</tr>		
-		<tr>
-		<td>Fire Your Guns</td>
-		<td>The Razors Edge</td>
-		</tr>		
-		<tr>
-		<td>Jailbreak</td>
-		<td>'74 Jailbreak</td>
-		</tr>	
-		<tr>
-		<td>Givin a Dog a Bone</td>
-		<td>Back in Black</td>
-		</tr>
-		<tr>
-		<td>Let Me Put My Love...</td>
-		<td>Back in Black</td>
-		</tr>
-		</table>
-	</div>
-	
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
+    <!--==============SLIDER STARTS=================-->
+    
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <div class="hero-unit">
+            <p class="text-center"><img src="images/powerup-logo-small-trans.png" alt="band logo"></p>
+            <h1></h1>
+            <h3 class="subtitle fancy hidden-phone"><span>A Tribute To The Sound of AC/DC</span></h3>
+          </div>
+        </li>
+        <li>
+          <div class="slide2">
+            <p>
+              <iframe width="640" height="360" src="https://www.youtube.com/embed/b_0dPcxdNR4" allowfullscreen></iframe>
+            </p>
+            <h3>AC/DC on the Power Up Tour '24</h3>
+          </div>
+        </li>
+        <li>
+          <div class="slide3">
+            <p class="text-center"> <img src="images/polarpark.jpg" style="height:50%" alt="Slider Image"> </p>
+            <h1>POLAR PARK</h1>
+            <h3>PLAYING GATE A - JUNE 8 - 2PM</h3>
+            <p class="hidden-phone"> <a href="https://mlb.tickets.com/?orgId=54713&agency=MILB_MPV&eventId=40770#/event/E40770/seatmap/?selectBuyers=false&minPrice=10&maxPrice=46&quantity=1&sort=price_desc&ada=false&seatSelection=true&onlyCoupon=true&onlyVoucher=false" class="btn btn-danger btn-large">BOOK TICKETS</a> </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <p class="text-center hidden-phone"> <a href="#events"><img src="images/arrow-bottom.png" alt="sroll to arrow"></a></p>
+  </div>
 </div>
 
-    </div>
-    <div class="page" id="photos_page">
-	<p/>
-            Scroll down to see some photos! <br><br/>
-	
-			<img src="lime2.jpg" class="textmiddle"/> 
-			<img src="lime3.jpg" class="textmiddle"/> 
-			<img src="pb2.jpg" style="width: 50%; height: 50%;"/> 
-			<img src="IMG_5369.jpg" style="width: 50%; height: 50%;"/> 
-			<img src="IMG_7153.jpg" style="width: 50%; height: 50%;"/> 
-			<img src="IMG_7158.jpg" style="width: 50%; height: 50%;"/> 
-			
-			  <img  src="./4s/0.jpg" ">						  
-			  <img  src="./4s/1.jpg" style="width:50%; ">						  
-			  <img  src="./4s/2.jpg" style="width:50%; ">						  
-			  <img  src="./4s/3.jpg" style="width:50%; ">						  
-			  <img  src="./4s/4.jpg" style="width:50%; ">						  
-			  <img  src="./4s/5.jpg" style="width:50%; ">						  
-			  <img  src="./4s/6.jpg" style="width:50%; ">						  
-			  <img  src="./4s/7.jpg" style="width:50%; ">						  
-			  <img  src="./4s/8.jpg" style="width:50%; ">						  
-			  <img  src="./4s/9.jpg" style="width:50%; ">						  
-			  <img  src="./4s/10.jpg" style="width:50%; ">						  
-			  <img  src="./4s/11.jpg" style="width:50%; ">						  
-			  <img  src="./4s/12.jpg" style="width:50%; ">						  
-			  <img  src="./4s/13.jpg" style="width:50%; ">						  
-			  <img  src="./4s/14.jpg" style="width:50%; ">						  
-			  <img  src="./4s/15.jpg" style="width:50%; ">						  
-			  <img  src="./4s/16.jpg" style="width:50%; ">						  
-			  <img  src="./4s/17.jpg" style="width:50%; ">						  
-			  <img  src="./4s/18.jpg" style="width:50%; ">						  
-			  <img  src="./4s/19.jpg" style="width:50%; ">						  
-			  <img  src="./4s/20.jpg" style="width:50%; ">						  
-			  <img  src="./4s/21.jpg" style="width:50%; ">						  
-			  <img  src="./4s/22.jpg" style="width:50%; ">						  
-			  <img  src="./4s/22.jpg" style="width:50%; ">						  
-			  <img  src="./4s/23.jpg" style="width:50%; ">						  
-			  <img  src="./4s/24.jpg" style="width:50%; ">						  
-			  <img  src="./4s/25.jpg" style="width:50%; ">						  
-			  <img  src="./4s/26.jpg" style="width:50%; ">						  
-			  <img  src="./4s/27.jpg" style="width:50%; ">						  
-			  <img  src="./4s/28.jpg" style="width:50%; ">						  
-			  <img  src="./4s/29.jpg" style="width:50%; ">						  
-			  <img  src="./4s/30.jpg" style="width:50%; ">						  
-			  
-    </div>
-    <div class="page" id="contactus_page">
-<p/>          
-		  Power Up is booking shows NOW! <p/>			
-		  <br/>
-		  <p/>
-		    www.facebook.com/poweruprock (or click image) <div> <a href="https://www.facebook.com/poweruprock" target="_blank"> <img src="fb7.PNG" style="width: 50%; height: 50%;"/> </a></div>
-		  <p/>	
-            Email: <a href="mailto:contact@powerup.band">contact@powerup.band</a>	
-    </div>
+<!--============== Latest Events =================-->
 
-    <!--<div id="controls">
-      <a href="#" onclick="shuffle()">shuffle cards</a><br/>
-      <a href="#" onclick="shuffle(3)">shuffle cards (slowly)</a>
-    </div>-->
+<div class="container"> <a id="events"></a>
+  <div class="row-fluid PageHead">
+    <div class="span12">
+      <h3>UPCOMING EVENTS<span> <img src="images/underline.png" alt="______"></span></h3>
+    </div>
+  </div>
+  <div class="row-fluid EventsList">
+    <div class="span4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Husky's Pub, Worcester</h3>
+          <p>May 11, 8:30 PM</p>
+          <!--<p class="text-center"><a href="#" class="btn btn-med">TICKETS</a> </p>-->
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Polar Park, Worcester</h3>
+		  <h5>Gate A, Plymouth Street</h5>
+          <p>June 8, 2:00 PM</p>
+          <p class="text-center"><a href="https://mlb.tickets.com/?orgId=54713&agency=MILB_MPV&eventId=40770#/event/E40770/seatmap/?selectBuyers=false&minPrice=10&maxPrice=46&quantity=1&sort=price_desc&ada=false&seatSelection=true&onlyCoupon=true&onlyVoucher=false" class="btn btn-med">TICKETS</a> </p>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>The 4's Sports Pub, Framingham</h3>
+		  <h5>Playing the 'Back in Black' ablum</h5>
+          <p>June 29, 8:30 PM</p>
+          <!--<p class="text-center"><a href="#" class="btn btn-med">TICKETS</a> </p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="moreevents">
+    <div class="row-fluid EventsList">
+      <div class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>Private Event</h3>
+            <p>Aug 17, 8:00 PM</p>
+            <!--<p class="text-center"><a href="#" class="btn btn-med">TICKETS</a> </p>-->
+          </div>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>Polar Park, Worcester</h3>
+		  <h5>Gate A, Plymouth Street</h5>
+            <p>Aug 28, 5:00 PM</p>
+            <p class="text-center"><a href="https://mlb.tickets.com/?orgId=54713&agency=MILB_MPV&eventId=40800#/event/E40800/seatmap/?selectBuyers=false&minPrice=9&maxPrice=45&quantity=1&sort=price_desc&ada=false&seatSelection=true&onlyCoupon=true&onlyVoucher=false" class="btn btn-med">TICKETS</a> </p>
+          </div>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>Polar Park, Worcester</h3>
+		  <h5>Gate A, Plymouth Street</h5>
+            <p>Sept 11, 4:30 PM</p>
+            <p class="text-center"><a href="https://mlb.tickets.com/?orgId=54713&agency=MILB_MPV&eventId=40806#/event/E40806/seatmap/?selectBuyers=false&minPrice=9&maxPrice=45&quantity=1&sort=price_desc&ada=false&seatSelection=true&onlyCoupon=true&onlyVoucher=false" class="btn btn-med">TICKETS</a> </p>
+          </div>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>Husky's Pub, Worcester</h3>
+            <p>Dates to be announced soon! :30 PM</p>
+            <!--<p class="text-center"><a href="https://mlb.tickets.com/?orgId=54713&agency=MILB_MPV&eventId=40806#/event/E40806/seatmap/?selectBuyers=false&minPrice=9&maxPrice=45&quantity=1&sort=price_desc&ada=false&seatSelection=true&onlyCoupon=true&onlyVoucher=false" class="btn btn-med">TICKETS</a> </p>-->
+          </div>
+        </div>
+      </div>	  
+    </div>
+  </div>
+  <p class="sectionfooter text-center"> <a class="showmore btn-link"><img src="images/show_icon.png" alt="icon"> <span>SHOW ALL EVENTS</span> </a> </p>
+</div>
 
-    
+<!--============== ABOUT AND OUR TEAM =================-->
+
+<div class="about" id="about" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row-fluid PageHead inverse">
+      <div class="span12">
+        <h3>ABOUT THE BAND<span> <img src="images/underline.png" alt="______"></span></h3>
+      </div>
+    </div>
+    <p class="lead text-center">We are Power Up. New England's premier tribute to the music of AC/DC. Consisting of five talented musicians with a passion for presenting the music of AC/DC that stands up to the original recordings. Power Up plays songs across the entire catalog of AC/DC albums- from High Voltage to Power Up. In the immortal words of AC/DC: ...cause rock and roll ain't no riddle- to me it makes good, good sense. Good sense. Let's go!<br>
+      <br>
+      For those about to rock- we salute you.</p>
+    <div class="row-fluid PageHead inverse">
+      <div class="span12">
+        <h3>Power Up Is...<span> <img src="images/underline.png" alt="______"></span></h3>
+      </div>
+    </div>
+    <div class="row-fluid theteam">
+      <div class="span2"><img src="images/gene.jpg" alt="member">Gene</div>
+      <div class="span2"><img src="images/mike.jpg" alt="member" style="width: 300px; height: 240px; object-fit: cover; object-position: 100% 0;">Mike</div>
+      <div class="span2"><img src="images/tony.jpg" alt="member">Tony</div>
+      <div class="span2"><img src="images/oz.jpeg" alt="member">Oz</div>
+      <div class="span2"><img src="images/rich.jpg" alt="member">Rich</div>
+    </div>
+  </div>
+</div>
+
+<!--============== IMAGE GALLERY ==============-->
+
+<div class="container"> <a id="gallery"></a>
+  <div class="row-fluid PageHead">
+    <div class="span12">
+      <h3>IMAGE GALLERY<span> <img src="images/underline.png" alt="______"></span></h3>
+    </div>
+  </div>
+  <div class="row-fluid Gallery">
+    <div class="span12">
+      <ul>
+        <li><a class="fancybox" href="images/gallery/photos/gallery1.jpg" data-fancybox-group="gallery" title="Band photos"><img src="images/gallery/thumb/t1.jpg" alt="" /></a></li>
+        <li><a class="fancybox" href="images/gallery/photos/gallery2.jpg" data-fancybox-group="gallery" title="Band photos"><img src="images/gallery/thumb/t2.jpg" alt="" /></a></li>
+        <li><a class="fancybox" href="images/gallery/photos/gallery3.jpg" data-fancybox-group="gallery" title="Band photos"><img src="images/gallery/thumb/t3.jpg" alt="" /></a></li>
+        <li><a class="fancybox" href="images/gallery/photos/gallery4.jpg" data-fancybox-group="gallery" title="Band photos"><img src="images/gallery/thumb/t4.jpg" alt="" /></a></li>
+        <li><a class="fancybox" href="images/gallery/photos/gallery5.jpg" data-fancybox-group="gallery" title="Band photos"><img src="images/gallery/thumb/t5.jpg" alt="" /></a></li>
+        <li><a class="fancybox" href="images/gallery/photos/gallery6.jpg" data-fancybox-group="gallery" title="Band photos"><img src="images/gallery/thumb/t6.jpg" alt="" /></a></li>
+        <li><a class="fancybox" href="images/gallery/photos/gallery7.jpg" data-fancybox-group="gallery" title="Band photos"><img src="images/gallery/thumb/t7.jpg" alt="" /></a></li>
+        <li><a class="fancybox" href="images/gallery/photos/gallery8.jpg" data-fancybox-group="gallery" title="Band photos"><img src="images/gallery/thumb/t8.jpg" alt="" /></a></li>
+      </ul>
+      <p class="sectionfooter text-center">&nbsp; </p>
+    </div>
+  </div>
+</div>
+
+<!--============== MEDIA ==============-->
+
+<div class="ourmedia" id="media" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row-fluid PageHead inverse">
+      <div class="span12">
+        <h3>MUSIC VIDEOS<span> <img src="images/underline.png" alt="______"></span></h3>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span12 text-center mediavideo">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/b_0dPcxdNR4" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="row-fluid MediaThumb">
+      <div class="span3 playvideo" data-url="http://www.youtube.com/embed/1uHepchMrGM"> <img src="images/media_thumb1.jpg" alt="media">
+        <p>SHOT DOWN IN FLAMES</p>
+      </div>
+      <div class="span3 playvideo" data-url="http://www.youtube.com/embed/GuAtcpFQpMw"> <img src="images/media_thumb2.jpg" alt="media">
+        <p>TBD</p>
+      </div>
+      <div class="span3 playvideo" data-url="http://www.youtube.com/embed/WJ2CTRdAqpo"> <img src="images/media_thumb3.jpg" alt="media">
+        <p>TBD</p>
+      </div>
+      <div class="span3 playvideo" data-url="http://www.youtube.com/embed/EUgjvidR-0Q"> <img src="images/media_thumb4.jpg" alt="media">
+        <p>TBD</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--============== AUDIO GALLERY ==============-->
+<!--
+<div class="container"> <a id="audio"></a>
+  <div class="row-fluid PageHead">
+    <div class="span12">
+      <h3>AUDIO GALLERY<span> <img src="images/underline.png" alt="______"></span></h3>
+    </div>
+  </div>
+  <div class="row-fluid Gallery">
+    <div class="span12">
+      <div class="audioembed">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/130692766&amp;color=ff5500&amp;auto_play=false&amp;show_artwork=true"></iframe>
+      </div>
+      <div class="audioembed">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129675685&amp;color=ff5500&amp;auto_play=false&amp;show_artwork=true"></iframe>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+-->
+<!--============== NEWS LETTER =================-->
+
+<div class="about" id="newsletter" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row-fluid PageHead inverse">
+      <div class="span12">
+        <h3>Don't Miss a Show!<span> <img src="images/underline.png" alt="______"></span></h3>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span6 offset3 text-center subscribe"> 
         
-    <script type="text/javascript" src="prototype.s2.min.js"></script> 
-    <script type="text/javascript" src="memory.js"></script> 
-  </body>
+        <!--==============MAIL CHIMP CODE STARTS=================--> 
+        
+        <!--======
+        
+        HOW TO CUSTOMIZE? : ONLY CHANGE THE FORM ACTION URL
+        
+        WARNING : NO NEED TO CHAGE FULL CODE -- ONLY CHANGE THE action="YOUR_URL_HERE"
+
+        =====-->
+        <!--
+        <form action="http://name.us4.list-manage.com/subscribe/post?u=contact@powerup.band" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <input class="input-block-level" name="EMAIL" type="email" id="mce-EMAIL" placeholder="Enter your email" required="required">
+          <p>
+            <button class="btn btn-danger btn-large" type="submit" name="subscribe" id="mc-embedded-subscribe">Notify me</button>
+          </p>
+        </form>
+        -->
+        <!--==============MAIL CHIMP CODE ENDS=================--> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--============== CONTACT ==============-->
+
+<div id="contact">
+  <div class="container">
+    <div class="row-fluid PageHead">
+      <div class="span12">
+        <h3>CONTACT US<span> <img src="images/underline.png" alt="______"></span></h3>
+      </div>
+    </div>
+    <!-- <div class="row-fluid ContactUs">
+      <div class="span6">
+        <form class="form-horizontal" id="phpcontactform">
+          <div class="control-group">
+            <input class="input-block-level" type="text" placeholder="Full Name" name="name" id="name">
+          </div>
+          <div class="control-group">
+            <input class="input-block-level" type="email" placeholder="Email ID" name="email" id="email">
+          </div>
+          <div class="control-group">
+            <input class="input-block-level" type="text" placeholder="Mobile Number" name="mobile" id="mobile">
+          </div>
+          <div class="control-group">
+            <textarea class="input-block-level" rows="10" name="message" placeholder="Your Message" id="message"></textarea>
+          </div>
+          <div class="control-group">
+            <p>
+              <input class="btn btn-danger btn-large" type="submit" value="Send Message">
+            </p>
+            <span class="loading"></span> </div>
+        </form>
+      </div> -->
+      <div class="span6">
+        <div class="row-fluid">
+          <div class="span12">
+            <h4> United States </h4>
+            <address>
+            <strong>Power Up</strong><br>
+            Boston<br> <!--
+            <abbr title="Phone">P:</abbr> +61 3 8376 6284<br>-->
+            <abbr title="Email"> Email: </abbr> <a href="mailto:contact@powerup.band">contact@powerup.band</a> <br>
+            </address>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <!--<div class="span12"> <img src="https://maps.app.goo.gl/FgRgzBeJQS8EoWFEA" "http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&amp;zoom=13&amp;size=600x300&amp;scale=2&amp;sensor=false" alt="static map"> <br>-->
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--============== FOOTER ==============-->
+
+<div class="footer" id="footer" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row-fluid PageHead inverse">
+      <div class="span12">
+        <h3>We are Social<span> <img src="images/underline.png" alt="______"></span></h3>
+      </div>
+    </div>
+    <!--<div class="row-fluid">
+      <div class="span12 TwitterFeed hidden-phone"> 
+        
+        <!--// TWITTER FEEDS STARTS-
+        <div id="TwitterBlock">
+          <div id="TwitterLogo"> <img src="images/twitter_logo.png" alt="twitter logo" /> </div>
+          <div id="ticker"></div>
+          
+          <!--// TWITTER FOLLOW STARTS-
+          
+          <a href="https://twitter.com/web3canvas" class="twitter-follow-button" data-show-count="true">Follow @web3canvas</a> 
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+          <!--// TWITTER FOLLOW ENDS- 
+        </div>
+        <!--// TWITTER FEEDS ENDS-
+        
+      </div>
+    </div> -->
+  </div>
+  <div class="row-fluid">
+    <div class="span12 socialButtons"> <!--<a href="http://twitter.com/surjithctly" target="_blank"> <img src="images/twitter_icon.png" alt="twitter"></a>--> <a href="http://facebook.com/poweruprock" target="_blank"><img src="images/facebook_icon.png" alt="facebook"></a> <!--<a href="http://web3canvas.com/" target="_blank"><img src="images/linkedin_icon.png" alt="linkedin"></a>--> </div>
+  </div>
+  <p class="text-center">Copyright &copy; 2024. Power Up. Presented by Raven Productions.</a></p>
+</div>
+</div>
+<!--===Back to top======--> 
+<a href="#" class="scrollup">Scroll</a> 
+
+<!--==============QUERY LIBRARY=================--> 
+
+<script src="js/jquery.easing.1.2.js"></script> 
+
+<!--==============Mordernizr =================--> 
+
+<script src="js/modernizr.js"></script> 
+
+<!--==============BOOTSTRAP JS=================--> 
+
+<script src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script> 
+
+<!--==========ONE PAGE SCROLLING SCRIPTS STARTS===============--> 
+
+<script>
+            $(function() {
+                $('.nav li a, .jumbotron p a').bind('click',function(event){
+                    var $anchor2 = $(this).parent();
+				    var $anchor = $(this);
+					$('.nav  li').removeClass('active');
+                    $anchor2.addClass('active');
+			
+			
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top - 50
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            });
+        </script> 
+
+<!--=============ONE PAGE SCROLLING SCRIPTS ENDS============--> 
+
+<!-- ======= TWITTER FEED API 1.1 ========= --> 
+
+<script src="twitter/jquery.tweet.js"></script> 
+<script type='text/javascript'>
+	     jQuery(function($){
+        $("#ticker").tweet({
+          username: "tnw", /*Enter your Twitter username inside quotes eg: web3canvas, barackobama etc*/
+          page: 1, /*How many tweets to show at a time, You need to increase #ticker height if you increased this value*/
+          avatar_size: null, /*If you want to show your twitter avatar, just change null to avatar size you needed eg: 32, 50, 80 etc..*/
+          count: 20, /*Total counts of tweets. */
+          loading_text: "Bringing latest tweets..." /*Loading text*/
+        }).bind("loaded", function() {
+          var ul = $(this).find(".tweet_list");
+          var ticker = function() {
+            setTimeout(function() {
+              var top = ul.position().top;
+              var h = ul.height();
+              var incr = (h / ul.children().length);
+              var newTop = top - incr;
+              if (h + newTop <= 0) newTop = 0;
+              ul.animate( {top: newTop}, 500 ); /*Speed of Scrolling*/
+              ticker();
+            }, 5000); /*Delay of changing tweet*/
+          };
+          ticker();
+        });
+      });
+	
+</script> 
+
+<!-- ======= SHOW HIDE EVENTS - v1.1 ========= --> 
+<script>
+
+ $(function() {
+	 $(".showmore").click(function() {
+		 $(".moreevents").slideToggle();
+		$(".showmore span").text(($(".showmore span").text() == "SHOW ALL EVENTS") ? "HIDE ALL EVENTS" : "SHOW ALL EVENTS") ; 
+	 }); 
+  });
+
+</script> 
+
+<!--=============PLAY VIDEO============--> 
+
+<script>
+
+    $(document).ready(function(){ 
+	
+ $(".playvideo").click(function(){
+	 var videourl = $(this).data("url");
+	 $(this).append('<span class="videoload">Loading video...</span>')
+	 $('.mediavideo iframe').attr('src', videourl);
+	 setTimeout(function() {
+	 $('.videoload').remove();
+	 },1000);
+ });
+ 
+ });
+</script> 
+
+<!--=============BACK TO TOP STARTS============--> 
+
+<script>
+    $(document).ready(function(){ 
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 800) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        }); 
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+ 
+    });
+</script> 
+
+<!--=============BACK TO TOP ENDS============-->
+
+</body>
 </html>
