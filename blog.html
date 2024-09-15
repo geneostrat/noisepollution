@@ -1,155 +1,386 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Raaga - Responsive Parallax Template for Bands</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-    <!--==============GOOGLE FONT - PT SANS=================-->
-    <link href="http://fonts.googleapis.com/css?family=PT%20Sans:400,700" rel="stylesheet" type="text/css">
+<!-- /**
+	STUDIO POINT - Parallax Responsive Retina Ready
+ 	Copyright (c) 2013, Subramanian 
 
-    <!--==============MAIN CSS=================-->
+	Author: Subramanian
+    Profile: themeforest.net/user/FMedia/
+	
+    Version: 1.0.0
+	Release Date: February 2013
+**/ -->	
 
-    <link href="css/band.css" rel="stylesheet" media="all">
+    <html lang="en"> 
+    
+    <head>
 
-    <!-- Mordernizr -->
-    <script src="js/modernizr.js"></script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>STUDIO POINT - Parallax Responsive Retina Ready</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- CSS
+  ================================================== --> 
+  
+  <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  	
+    <!-- Included CSS files 
+	================================================== -->
+    
+	<link rel="stylesheet" type="text/css"  href="css/main.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/base.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/color.css">
+	<link rel="stylesheet" type="text/css"  href="css/skeleton.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox-1.3.4.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css"  href="css/flexslider.min.css" media="screen" />
+    
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- Included javascript files 
+	================================================== -->
+    
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <!--[if !IE]><!-->
+	<script src="js/ios6-timers.js"></script> 
+    <!--<![endif]-->
+	<script type="text/javascript" src="js/custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.isotope.min.js" ></script>  
+    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+	<script type="text/javascript" src="js/portfolio.detail.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/main-fm.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jstwitter.js"></script>  
+    
+   
+    <script>
+		
+		/* Site Main plug-in initilize */
+		
+		$(document).ready(function(){
+			
+			jQuery(function($){
+				$("body").mainFm({
+					
+				/* set whether it's an one page or separate page file, if it's set false, the template works like a separate page version*/
+					onePage : false,
+					
+				/* Set the opening page. 
+					leave it blank value if you need to show the home page as a opening page*/
+					currentPage : "blog.html",
+					
+				/* FlexSlider slideshow speed */
+					slideshowSpeed : 5000
+					
+				});
+			});	
+
+		});
+			
+			
+			
+	</script>
+
+    
 </head>
+<body >
 
-<body>
-    <!--==============Logo & Menu Bar=================-->
 
-    <div class="navbar navbar-fixed-top navbar-absolute">
-        <div class="navbar-inner">
-            <div class="container">
 
-                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+<!--
+Site main frame begin
+Note: Don't edit main frame, except comment area
+-->
 
-                <!-- Be sure to leave the brand out there if you want it shown -->
-                <a class="brand" href="index.html"> <img src="images/logo-small.png" alt="logo"></a>
 
-                <!-- Everything you want hidden at 940px or less, place within here -->
-                <div class="nav-collapse collapse">
-                    <!-- .nav, .navbar-search, .navbar-form, etc -->
-
-                    <ul class="nav pull-right">
-                        <li><a href="index.html#home">HOME</a></li>
-                        <li><a href="index.html#events">EVENTS</a></li>
-                        <li><a href="index.html#about">ABOUT</a></li>
-                        <li><a href="index.html#gallery">GALLERY</a></li>
-                        <li><a href="index.html#media">MEDIA</a></li>
-                        <li><a href="index.html#audio">AUDIO</a></li>
-                        <li><a href="index.html#newsletter">SUBSCRIBE</a></li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog.html" target="_blank">BLOG LIST</a></li>
-                                <li><a href="blog-post.html" target="_blank">SINGLE BLOG PAGE</a></li>
-                                <li><a href="404.html" target="_blank">404 PAGE</a></li>
-                                <li><a href="soon.html" target="_blank">COMING SOON</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html#contact">CONTACT</a></li>
+<div class="header singlePage " >
+	<div class="container" >
+		<div class="logo" >
+			<a href="index.html"><img src="images/logo.png" data-src-small="images/logo_s.png" data-retina="yes" alt="logo text"></a>
+        </div>
+                
+		<div class="nav" >
+			<ul id="navHolder" >
+                <!--  Add require site page navigation -->                    
+                <li><a href="index.html">HOME</a></li> 
+                <li><a href="index.html#!aboutus">ABOUT US</a></li>
+                <li><a href="index.html#!services">SERVICES</a></li>
+                <li><a href="index.html#!portfolio">PORTFOLIO</a></li>
+               	<li><a href="#!">FEATURES</a>
+                	<ul>
+                    	<li><a href="index.html#!sample_video">VIDEO</a></li>
+                    	<li><a href="blog.html">BLOG</a></li>
+                        <li><a href="blog_post.html">BLOG POST</a></li>
+                        <li><a href="features.html">FEATURE</a></li>
                     </ul>
-                </div>
-            </div>
+                </li>
+                <li><a href="index.html#!contactus" class="last">CONTACT US</a></li>                                          
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+<!-- 
+Begin Page content
+ 
+Note: mobile_spacing class is used to add spacing arround the content in mobile device not in desktop,
+if you remove the mobile_spacing class, the layout design doesn't effect in desktop it only effect in mobile device
+ -->
+
+<div class="lightStyle" >
+	<div class="fullWidth titleTop ">
+		<div class="container" >  
+        	<div class="sixteen columns"> 
+                    <div class="mobile_spacing">
+                    	 <span class="title_text dark_color"> Blog</span>
+                    </div>
+			</div>
         </div>
-    </div>
+  	</div>
+</div>
+ 
 
-    <!--==============Content Area=================-->
+<div class="fullWidth darkStyle " > 
+	<div class="container" > 
 
-    <div class="container">
+        <div class="sixteen columns" >
+			<div class="mobile_spacing" >
 
-        <!--============== Blog ==============-->
-
-        <div class="row-fluid PageHead">
-            <div class="span12">
-                <h3>OUR BLOG<span> <img src="images/underline.png" alt="______"></span></h3>
-            </div>
-        </div>
-        <div class="row-fluid blog">
-            <div class="span9">
-                <div class="blogpost">
-                    <h1 class="title">Tickets available for latest music events</h1>
-                    <h3 class="subtitle">Posted by <a href="#">Surjith SM</a> on 17 Jul 2013. <a href="#">16 comments</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.</p>
-                    <p><a href="blog-post.html" class="btn btn-danger">READ MORE</a></p>
+            	<!-- Blog Title -->
+				<span class="alignLeft mobile_top_spacing">
+					<h3 class="title_uppercase title_light">Single blog page - Yes it's a separate page</h3>
+				</span>
+                    	
+				<hr> 
+                
+                <!-- Date -->
+                <div class="blog_date alignLeft dark_color">
+                    14<br>
+                    Jul
                 </div>
-                <div class="blogpost">
-                    <h1 class="title">Amazing experience of Raaga Music Band</h1>
-                    <h3 class="subtitle">Posted by <a href="#">Surjith SM</a> on 17 Jul 2013. <a href="#">16 comments</a></h3>
-                    <img src="images/blog_img.jpg" alt="blog img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.</p>
-                    <p><a href="blog-post.html" class="btn btn-danger">READ MORE</a></p>
-                </div>
-                <div class="blogpost">
-                    <h1 class="title">London music night 2013</h1>
-                    <h3 class="subtitle">Posted by <a href="#">Surjith SM</a> on 17 Jul 2013. <a href="#">16 comments</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.</p>
-                    <p><a href="blog-post.html" class="btn btn-danger">READ MORE</a></p>
-                </div>
-            </div>
-            <div class="span3 sidebar">
-                <h3>Categories</h3>
-                <ul class="bloglist">
-                    <li>Dedicated Servers</li>
-                    <li>Managed Hosting</li>
-                    <li>News and Updates</li>
-                    <li>New Features</li>
-                    <li>Domian Registration</li>
-                    <li>Server Locations</li>
-                </ul>
+                <!-- Blog post Author and data -->
+				<a class="list_hover"><span class="list7_white"> Aline marke</span></a>
+                <a class=" list_hover"><span class="list8_white"> 76 comments</span></a>
+                <a class=" list_hover"><span class="list10_white"> 50</span></a>
                 <br>
-                <h3>Text Widget</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor.
-                    <br>
-                    <br> Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit.</p>
-                <br>
-                <h3>Archieves</h3>
-                <ul class="bloglist">
-                    <li>May 2013</li>
-                    <li>April 2013</li>
-                    <li>March 2013</li>
-                    <li>February 2013</li>
-                    <li>January 2013</li>
-                    <li>December 2012</li>
-                    <li>November 2012</li>
-                    <li>October 2012</li>
-                    <li>September 2012</li>
-                    <li>August 2012</li>
-                </ul>
-            </div>
+                <!-- Social network link -->
+                <ul class="social_bookmarks noMargin">
+					<li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
+ 					<li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
+					<li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
+					<li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
+					<li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
+				</ul>
+                <hr>  
+                
+			</div>
+		</div>
+        
+		
+        <div class="sixteen columns  " >
+        	<!-- Slide show -->
+			<div id="flexslider-container" > 
+                  <div class="flexslider" >  
+                      <ul class="slides border2 dark_border">
+                          <li> <img src="images/blog_slideshow/image1.jpg" alt="slideshow" /> </li>
+                          <li> <img src="images/blog_slideshow/image2.jpg" alt="slideshow" /> </li>
+                          <li> <img src="images/blog_slideshow/image3.jpg" alt="slideshow" /> </li>
+                          <li> <img src="images/blog_slideshow/image4.jpg" alt="slideshow" /> </li>                
+                      </ul>                 
+                  </div>
+			</div>
+			<hr> 
         </div>
-        <!--Blog Closed-->
-
-    </div>
-    <!--Container Closed-->
-
-    <!--============== Footer ==============-->
-
-    <div class="footer" id="footer" data-stellar-background-ratio="0.5">
-        <div class="container">
-            <div class="row-fluid">
-                <div class="span12 socialButtons">
-                    <a href="http://twitter.com/surjithctly" target="_blank"> <img src="images/twitter_icon.png" alt="twitter"></a>
-                    <a href="http://facebook.com/web3canvas" target="_blank"><img src="images/facebook_icon.png" alt="facebook"></a>
-                    <a href="http://web3canvas.com/" target="_blank"><img src="images/linkedin_icon.png" alt="linkedin"></a>
-                </div>
+                
+        <div class="sixteen columns  " >
+			<div class="mobile_spacing" >
+            <!-- Description Text -->
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo <a href="#!">tristique odio</a>, Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi nam liber.</p>
+                    
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi nam liber.</p>
+					
+				<br>
             </div>
-            <p class="text-center">Copyright &copy; 2013. Raaga Band. Buy it on Themeforest</p>
-        </div>
-    </div>
+         </div>
+         
+         
+       <div class="fourteen columns alpha" >
+          <div class="mobile_spacing" >
+              <section id="comments-sec">
+                  <!-- Number of comments posted-->
+                  <h5 >Comments (4)</h5>
+                  
+                  <ol class="comment-list">
+                  
+                      <li class="comment">
+                          <article> 
+                              <!-- author -->
+                              <img src="images/post_aut_1.jpg" alt="Image" class="avatar">
+                              <div class="comment-aut">
+                                  <a class="author text_hover">Aline marke</a>
+                                  <p class="date">july 17, 2012</p>
+                              </div>
+                              <!-- author comment -->
+                              <div class="comment-area">
+                                  <p>Maecenas sed justo varius velit imperdiet bibendum. commodo tristique odio. quis fringilla ligula aliquet ut. Maecenas sed justo varius velit imperdiet bibendum.</p>
+                              </div>
+                          </article>
+                          
+                          <ul class="children">
+                            <li class="comment">
+                              <article> 
+                                  <!-- author -->
+                                  <img src="images/post_aut_2.jpg" alt="Image" class="avatar">
+                                  <div class="comment-aut">
+                                      <a class="author text_hover">Steve john</a>
+                                      <p class="date">july 17, 2012</p>
+                                  </div>
+                                  <!-- author comment -->
+                                  <div class="comment-area">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius</p>
+                                  </div>
+                              </article>
+                            </li>
+                          </ul>
+                      </li>
+                        
+                        
+                      <li class="comment">
+                          <article> 
+                              <!-- author -->
+                              <img src="images/post_aut_2.jpg" alt="Image" class="avatar">
+                              <div class="comment-aut">
+                                  <a class="author text_hover">Steve john</a>
+                                  <p class="date">jun 7, 2012</p>
+                              </div>
+                              <!-- author comment -->
+                              <div class="comment-area">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo est usus legentis in iis qui facit eorum claritatem.</p>
+                              </div>
+                          </article>
+                      </li>
+                        
+                      <li class="comment">
+                          <article> 
+                              <!-- author -->
+                              <img src="images/post_aut_1.jpg" alt="Image" class="avatar">
+                              <div class="comment-aut">
+                                  <a class="author text_hover">Aline marke</a>
+                                  <p class="date">jun 5, 2012</p>
+                              </div>
+                              <!-- author comment -->
+                              <div class="comment-area">
+                                  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+                              </div>
+                          </article>
+                      </li>
+                        
+                  </ol>
+              </section>
+      
+      
+              <section id="comment-replay" class="">
+                  <h5>Leave a Comment</h5>
+                  <!-- Add comment Form field -->
+                  <form method="post" class="comments-form">
+                          
+                      <label for="comment-name"><h6><strong>Name</strong> (required)</h6></label>
+                      <input type="text" name="name" value="" id="comment-name" />
+                      <br>
+                         
+                      <label for="comment-email"><h6><strong>Email</strong> (required)</h6></label>
+                      <input type="email" name="email" value="" id="comment-email" />
+                      <br>
+                         
+                      <label for="comment-url"><h6><strong>Website</strong></h6></label>
+                      <input type="url" name="url" value="" id="comment-url" />
+                      <br>
+                         
+                      <label for="comment-message"><h6><strong>Your Comment</strong> (required)</h6></label>
+                      <textarea name="message" id="comment-message" cols="88" rows="6" required></textarea>
+                      <br>
+                      
+                      <a class="alignRight" href="#!" ><span class="button">Submit</span></a>
+          
+                      <div class="clear"></div>
+          
+                  </form>
+              </section>
+                  
+			</div>
+		</div>
+    
 
-    <!--============== JQUERY LIBRARY =================-->
-    <script src="js/jquery-1.9.0.min.js"></script>
-    <script src="js/jquery.easing.1.2.js"></script>
+	</div>
+</div>
 
-    <!--==============BOOTSTRAP JS=================-->
-    <script src="js/bootstrap.js"></script>
+
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<div class="contentWrapper lightStyle noRetina " >  
+	<div class="fullWidth parallax" > 
+       
+		<div class="footer" >
+        
+			<div class="footer_container darkStyle bg_transparent" > 
+            
+				<a class="move_up" ><span></span></a>
+				<div class="separator_mini"></div>
+                
+				<!-- Place your copyright text -->
+				<h6 class="bottomText"><span>Copyright © 2012 FMedia</span></h6>
+                
+				<div class="footer_social">
+					<ul class="social_bookmarks" >                 
+						<li class="twitter_white noMargin"><a >Follow us on Twitter</a></li>
+						<li class="facebook_white noMargin"><a >Join our Facebook Group</a></li>
+						<li class="gplus_white noMargin"><a >Join me on Google Plus</a></li>
+						<li class="linkedin_white noMargin"><a >Add me on Linkedin</a></li>
+						<li class="rss_white noMargin"><a >RSS</a></li>
+					</ul>
+				</div> 
+                      
+			</div>
+            
+		</div> 
+                   
+	</div>
+</div>
+
 
 </body>
 
